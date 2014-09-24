@@ -36,7 +36,11 @@ impl HTMLOptionElementDerived for EventTarget {
 }
 
 impl HTMLOptionElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLOptionElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLOptionElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLOptionElement {
+>>>>>>> Made some DOM fields private.
         HTMLOptionElement {
             htmlelement: HTMLElement::new_inherited(HTMLOptionElementTypeId, localName, document)
         }

@@ -115,7 +115,11 @@ impl<'a> HTMLIFrameElementHelpers for JSRef<'a, HTMLIFrameElement> {
 }
 
 impl HTMLIFrameElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLIFrameElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLIFrameElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLIFrameElement {
+>>>>>>> Made some DOM fields private.
         HTMLIFrameElement {
             htmlelement: HTMLElement::new_inherited(HTMLIFrameElementTypeId, localName, document),
             size: Traceable::new(Cell::new(None)),

@@ -32,7 +32,11 @@ impl HTMLScriptElementDerived for EventTarget {
 }
 
 impl HTMLScriptElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLScriptElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLScriptElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLScriptElement {
+>>>>>>> Made some DOM fields private.
         HTMLScriptElement {
             htmlelement: HTMLElement::new_inherited(HTMLScriptElementTypeId, localName, document)
         }

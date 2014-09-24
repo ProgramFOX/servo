@@ -26,7 +26,11 @@ impl HTMLPreElementDerived for EventTarget {
 }
 
 impl HTMLPreElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLPreElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLPreElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLPreElement {
+>>>>>>> Made some DOM fields private.
         HTMLPreElement {
             htmlelement: HTMLElement::new_inherited(HTMLPreElementTypeId, localName, document)
         }

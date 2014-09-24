@@ -19,7 +19,11 @@ pub struct DOMRectList {
 }
 
 impl DOMRectList {
+<<<<<<< HEAD
     pub fn new_inherited(window: JSRef<Window>,
+=======
+    fn new_inherited(window: &JSRef<Window>,
+>>>>>>> Made some DOM fields private.
                          rects: Vec<JSRef<DOMRect>>) -> DOMRectList {
         let rects = rects.iter().map(|rect| JS::from_rooted(*rect)).collect();
         DOMRectList {

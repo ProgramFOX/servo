@@ -26,7 +26,11 @@ impl HTMLFrameElementDerived for EventTarget {
 }
 
 impl HTMLFrameElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLFrameElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLFrameElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLFrameElement {
+>>>>>>> Made some DOM fields private.
         HTMLFrameElement {
             htmlelement: HTMLElement::new_inherited(HTMLFrameElementTypeId, localName, document)
         }

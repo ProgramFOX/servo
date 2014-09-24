@@ -26,7 +26,11 @@ impl HTMLMetaElementDerived for EventTarget {
 }
 
 impl HTMLMetaElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLMetaElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLMetaElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLMetaElement {
+>>>>>>> Made some DOM fields private.
         HTMLMetaElement {
             htmlelement: HTMLElement::new_inherited(HTMLMetaElementTypeId, localName, document)
         }

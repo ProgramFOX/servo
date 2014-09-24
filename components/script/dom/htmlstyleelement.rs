@@ -30,7 +30,11 @@ impl HTMLStyleElementDerived for EventTarget {
 }
 
 impl HTMLStyleElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLStyleElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLStyleElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLStyleElement {
+>>>>>>> Made some DOM fields private.
         HTMLStyleElement {
             htmlelement: HTMLElement::new_inherited(HTMLStyleElementTypeId, localName, document)
         }

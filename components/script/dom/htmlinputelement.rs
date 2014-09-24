@@ -31,7 +31,11 @@ impl HTMLInputElementDerived for EventTarget {
 }
 
 impl HTMLInputElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLInputElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLInputElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLInputElement {
+>>>>>>> Made some DOM fields private.
         HTMLInputElement {
             htmlelement: HTMLElement::new_inherited(HTMLInputElementTypeId, localName, document)
         }

@@ -35,7 +35,11 @@ impl HTMLLinkElementDerived for EventTarget {
 }
 
 impl HTMLLinkElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLLinkElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLLinkElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLLinkElement {
+>>>>>>> Made some DOM fields private.
         HTMLLinkElement {
             htmlelement: HTMLElement::new_inherited(HTMLLinkElementTypeId, localName, document)
         }

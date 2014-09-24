@@ -26,7 +26,11 @@ impl HTMLEmbedElementDerived for EventTarget {
 }
 
 impl HTMLEmbedElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLEmbedElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLEmbedElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLEmbedElement {
+>>>>>>> Made some DOM fields private.
         HTMLEmbedElement {
             htmlelement: HTMLElement::new_inherited(HTMLEmbedElementTypeId, localName, document)
         }

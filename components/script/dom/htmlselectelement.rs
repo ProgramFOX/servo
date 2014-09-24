@@ -34,7 +34,11 @@ impl HTMLSelectElementDerived for EventTarget {
 }
 
 impl HTMLSelectElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLSelectElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLSelectElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLSelectElement {
+>>>>>>> Made some DOM fields private.
         HTMLSelectElement {
             htmlelement: HTMLElement::new_inherited(HTMLSelectElementTypeId, localName, document)
         }

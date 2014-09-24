@@ -277,7 +277,11 @@ impl<'a> DocumentHelpers for JSRef<'a, Document> {
 }
 
 impl Document {
+<<<<<<< HEAD
     pub fn new_inherited(window: JSRef<Window>,
+=======
+    fn new_inherited(window: &JSRef<Window>,
+>>>>>>> Made some DOM fields private.
                          url: Option<Url>,
                          is_html_document: IsHTMLDocument,
                          content_type: Option<DOMString>) -> Document {

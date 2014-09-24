@@ -72,7 +72,11 @@ impl<'a> PrivateHTMLImageElementHelpers for JSRef<'a, HTMLImageElement> {
 }
 
 impl HTMLImageElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLImageElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLImageElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLImageElement {
+>>>>>>> Made some DOM fields private.
         HTMLImageElement {
             htmlelement: HTMLElement::new_inherited(HTMLImageElementTypeId, localName, document),
             image: Untraceable::new(RefCell::new(None)),

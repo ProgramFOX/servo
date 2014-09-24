@@ -26,7 +26,11 @@ impl HTMLMapElementDerived for EventTarget {
 }
 
 impl HTMLMapElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLMapElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLMapElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLMapElement {
+>>>>>>> Made some DOM fields private.
         HTMLMapElement {
             htmlelement: HTMLElement::new_inherited(HTMLMapElementTypeId, localName, document)
         }

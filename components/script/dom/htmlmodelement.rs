@@ -26,7 +26,11 @@ impl HTMLModElementDerived for EventTarget {
 }
 
 impl HTMLModElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLModElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLModElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLModElement {
+>>>>>>> Made some DOM fields private.
         HTMLModElement {
             htmlelement: HTMLElement::new_inherited(HTMLModElementTypeId, localName, document)
         }

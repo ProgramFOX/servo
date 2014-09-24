@@ -26,7 +26,11 @@ impl HTMLHeadElementDerived for EventTarget {
 }
 
 impl HTMLHeadElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLHeadElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLHeadElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLHeadElement {
+>>>>>>> Made some DOM fields private.
         HTMLHeadElement {
             htmlelement: HTMLElement::new_inherited(HTMLHeadElementTypeId, localName, document)
         }

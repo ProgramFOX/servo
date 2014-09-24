@@ -26,7 +26,11 @@ impl HTMLParamElementDerived for EventTarget {
 }
 
 impl HTMLParamElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLParamElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLParamElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLParamElement {
+>>>>>>> Made some DOM fields private.
         HTMLParamElement {
             htmlelement: HTMLElement::new_inherited(HTMLParamElementTypeId, localName, document)
         }

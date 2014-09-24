@@ -26,7 +26,11 @@ impl HTMLAppletElementDerived for EventTarget {
 }
 
 impl HTMLAppletElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLAppletElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLAppletElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLAppletElement {
+>>>>>>> Made some DOM fields private.
         HTMLAppletElement {
             htmlelement: HTMLElement::new_inherited(HTMLAppletElementTypeId, localName, document)
         }

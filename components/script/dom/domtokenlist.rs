@@ -25,7 +25,11 @@ pub struct DOMTokenList {
 }
 
 impl DOMTokenList {
+<<<<<<< HEAD
     pub fn new_inherited(element: JSRef<Element>,
+=======
+    fn new_inherited(element: &JSRef<Element>,
+>>>>>>> Made some DOM fields private.
                          local_name: &'static str) -> DOMTokenList {
         DOMTokenList {
             reflector_: Reflector::new(),

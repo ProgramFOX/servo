@@ -26,7 +26,11 @@ impl HTMLUnknownElementDerived for EventTarget {
 }
 
 impl HTMLUnknownElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLUnknownElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLUnknownElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLUnknownElement {
+>>>>>>> Made some DOM fields private.
         HTMLUnknownElement {
             htmlelement: HTMLElement::new_inherited(HTMLUnknownElementTypeId, localName, document)
         }

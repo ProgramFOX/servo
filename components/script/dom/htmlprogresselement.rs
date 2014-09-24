@@ -26,7 +26,11 @@ impl HTMLProgressElementDerived for EventTarget {
 }
 
 impl HTMLProgressElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLProgressElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLProgressElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLProgressElement {
+>>>>>>> Made some DOM fields private.
         HTMLProgressElement {
             htmlelement: HTMLElement::new_inherited(HTMLProgressElementTypeId, localName, document)
         }

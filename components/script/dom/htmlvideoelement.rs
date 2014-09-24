@@ -26,7 +26,11 @@ impl HTMLVideoElementDerived for EventTarget {
 }
 
 impl HTMLVideoElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLVideoElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLVideoElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLVideoElement {
+>>>>>>> Made some DOM fields private.
         HTMLVideoElement {
             htmlmediaelement: HTMLMediaElement::new_inherited(HTMLVideoElementTypeId, localName, document)
         }

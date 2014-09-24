@@ -26,7 +26,11 @@ impl HTMLBRElementDerived for EventTarget {
 }
 
 impl HTMLBRElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLBRElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLBRElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLBRElement {
+>>>>>>> Made some DOM fields private.
         HTMLBRElement {
             htmlelement: HTMLElement::new_inherited(HTMLBRElementTypeId, localName, document)
         }

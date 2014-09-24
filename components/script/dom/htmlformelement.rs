@@ -26,7 +26,11 @@ impl HTMLFormElementDerived for EventTarget {
 }
 
 impl HTMLFormElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLFormElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLFormElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLFormElement {
+>>>>>>> Made some DOM fields private.
         HTMLFormElement {
             htmlelement: HTMLElement::new_inherited(HTMLFormElementTypeId, localName, document)
         }

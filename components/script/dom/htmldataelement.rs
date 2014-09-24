@@ -26,7 +26,11 @@ impl HTMLDataElementDerived for EventTarget {
 }
 
 impl HTMLDataElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLDataElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLDataElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLDataElement {
+>>>>>>> Made some DOM fields private.
         HTMLDataElement {
             htmlelement: HTMLElement::new_inherited(HTMLDataElementTypeId, localName, document)
         }

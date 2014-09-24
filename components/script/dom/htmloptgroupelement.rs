@@ -31,7 +31,11 @@ impl HTMLOptGroupElementDerived for EventTarget {
 }
 
 impl HTMLOptGroupElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLOptGroupElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLOptGroupElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLOptGroupElement {
+>>>>>>> Made some DOM fields private.
         HTMLOptGroupElement {
             htmlelement: HTMLElement::new_inherited(HTMLOptGroupElementTypeId, localName, document)
         }

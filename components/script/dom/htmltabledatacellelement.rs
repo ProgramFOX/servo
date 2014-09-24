@@ -26,7 +26,11 @@ impl HTMLTableDataCellElementDerived for EventTarget {
 }
 
 impl HTMLTableDataCellElement {
-    pub fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLTableDataCellElement {
+<<<<<<< HEAD
+    fn new_inherited(localName: DOMString, document: JSRef<Document>) -> HTMLTableDataCellElement {
+=======
+    fn new_inherited(localName: DOMString, document: &JSRef<Document>) -> HTMLTableDataCellElement {
+>>>>>>> Made some DOM fields private.
         HTMLTableDataCellElement {
             htmltablecellelement: HTMLTableCellElement::new_inherited(HTMLTableDataCellElementTypeId, localName, document)
         }
